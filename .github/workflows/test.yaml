@@ -1,0 +1,10 @@
+name: Test workflow
+on: 
+  - push
+  - workflow_distpatch
+jobs:
+  Test_workflow1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: bb1
+        run: echo "Test workflows"
